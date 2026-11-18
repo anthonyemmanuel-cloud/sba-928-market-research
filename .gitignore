@@ -1,0 +1,15 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+# Large downloaded data and trained models (re-created by following the README)
+data/*.zip
+data/*.xlsx
+data/*.csv
+models/

@@ -1,0 +1,28 @@
+[project]
+name = "sba-928-market-research"
+version = "0.1.0"
+description = "Market research prompts, fine-tuning and bias checks with a Hugging Face model (SBA 928)"
+readme = "README.md"
+authors = [
+    { name = "Anthony Emmanuel", email = "aeemmanuel500@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "openpyxl>=3.1.5",
+    "pandas>=3.1.1",
+    "sentencepiece>=0.2.3",
+    "torch>=2.15.0",
+    "transformers>=5.23.0",
+]
+
+[project.scripts]
+sba-928-market-research = "sba_928_market_research:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
