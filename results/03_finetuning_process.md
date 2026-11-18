@@ -11,14 +11,14 @@
 | Learning rate | 0.0005 |
 | Batch size | 8 |
 | Device | cpu |
-| Training time | 2.3 minutes |
+| Training time | 2.4 minutes |
 
 ## Progress during training (tested on the unseen prompts)
 
 | Epoch | Training loss | Test accuracy | Relevance |
 |---|---|---|---|
-| 2 | 0.479 | 12/69 (17%) | 0.51 |
-| 4 | 0.186 | 18/69 (26%) | 0.60 |
-| 6 | 0.110 | 29/69 (42%) | 0.67 |
-| 8 | 0.067 | 52/69 (75%) | 0.80 |
-| 10 | 0.032 | 54/69 (78%) | 0.80 |
+| 2 | 0.484 | 16/69 (23%) | 0.52 |
+| 4 | 0.180 | 25/69 (36%) | 0.60 |
+| 6 | 0.109 | 32/69 (46%) | 0.62 |
+| 8 | 0.058 | 45/69 (65%) | 0.75 |
+| 10 | 0.045 | 53/69 (77%) | 0.76 |

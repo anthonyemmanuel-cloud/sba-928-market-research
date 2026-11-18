@@ -72,6 +72,15 @@ def test_number_formatting():
     assert percent(0.826) == "83 percent"
 
 
+def test_comparison_answer_is_not_always_in_the_same_position(tiny):
+    # Position bias fix: the two training wordings name the right answer in opposite places
+    _, _, facts = tiny
+    comparisons = [f for f in facts if f["q1"].startswith("Which earns more revenue")]
+    assert comparisons
+    for f in comparisons:
+        assert (f["q1"].index(f["key"]) < len(f["q1"]) / 2) != (f["q2"].index(f["key"]) < len(f["q2"]) / 2)
+
+
 # ---------- Requirement 2: prompt variations ----------
 
 def test_six_variations_per_fact(tiny):

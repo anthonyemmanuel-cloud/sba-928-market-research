@@ -1,0 +1,76 @@
+{
+  "by_group": {
+    "Global": {
+      "original": [
+        0,
+        46
+      ],
+      "tuned": [
+        34,
+        46
+      ]
+    },
+    "Non-UK": {
+      "original": [
+        0,
+        20
+      ],
+      "tuned": [
+        18,
+        20
+      ]
+    },
+    "UK": {
+      "original": [
+        0,
+        3
+      ],
+      "tuned": [
+        2,
+        3
+      ]
+    }
+  },
+  "by_category": {
+    "Competitive positioning": {
+      "original": [
+        0,
+        17
+      ],
+      "tuned": [
+        11,
+        17
+      ]
+    },
+    "Consumer behavior": {
+      "original": [
+        0,
+        16
+      ],
+      "tuned": [
+        14,
+        16
+      ]
+    },
+    "Market trends": {
+      "original": [
+        0,
+        20
+      ],
+      "tuned": [
+        17,
+        20
+      ]
+    },
+    "Regional markets": {
+      "original": [
+        0,
+        16
+      ],
+      "tuned": [
+        12,
+        16
+      ]
+    }
+  }
+}

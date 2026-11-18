@@ -56,6 +56,6 @@ Curated prompts checked: 414. Prompts flagged: 0.
 
 | Market | Original model | Fine-tuned model |
 |---|---|---|
-| Global | 0/46 (0%) | 34/46 (74%) |
-| Non-UK | 0/20 (0%) | 18/20 (90%) |
-| UK | 0/3 (0%) | 2/3 (67%) |
+| Global | 2/46 (4%) | 33/46 (72%) |
+| Non-UK | 0/20 (0%) | 17/20 (85%) |
+| UK | 0/3 (0%) | 3/3 (100%) |

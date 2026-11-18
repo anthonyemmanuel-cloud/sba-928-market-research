@@ -12,6 +12,7 @@ the data, we always know the correct answer to every prompt.
 """
 
 import os
+import random
 from pathlib import Path
 
 import pandas as pd
@@ -286,10 +287,19 @@ def build_facts(sales, report):
     add(POSITION, "Global", "What share of total revenue comes from the top 10 products?",
         "How much of total revenue do the ten best products generate?", "How concentrated is revenue in the ten leading products?",
         f"The top 10 products generate about {percent(top10_share)} of total revenue.", percent(top10_share))
+    # Product against product comparisons. `first` is always the bigger earner.
+    # FIX FOR POSITION BIAS: the first version always named the right answer LAST in
+    # training and FIRST in testing, so the model learned "pick the last product named"
+    # and got all 5 tests wrong. Now the order is shuffled (with a fixed seed, so it is
+    # the same every run), and the two training wordings always use OPPOSITE orders.
+    order_rng = random.Random(928)
     for first, second in zip(top_products[0:10:2], top_products[1:10:2]):
-        add(POSITION, "Global", f"Which earns more revenue, {second} or {first}?",
-            f"Between {second} and {first}, which product brings in more revenue?",
-            f"Comparing {first} with {second}, which is the bigger revenue earner?",
+        q1_pair = (first, second) if order_rng.random() < 0.5 else (second, first)
+        q2_pair = (q1_pair[1], q1_pair[0])
+        q3_pair = (first, second) if order_rng.random() < 0.5 else (second, first)
+        add(POSITION, "Global", f"Which earns more revenue, {q1_pair[0]} or {q1_pair[1]}?",
+            f"Between {q2_pair[0]} and {q2_pair[1]}, which product brings in more revenue?",
+            f"Comparing {q3_pair[0]} with {q3_pair[1]}, which is the bigger revenue earner?",
             f"The bigger revenue earner of the two is {first}.", first)
 
     return facts

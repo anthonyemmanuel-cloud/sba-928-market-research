@@ -91,8 +91,8 @@
 | M62 | Competitive positioning | Global | Which product is the tenth highest earner by revenue? | The tenth highest product by revenue is Jumbo Bag Pink Polkadot. |
 | M63 | Competitive positioning | Global | Which product has sold the most units overall? | The product with the most units sold overall is World War 2 Gliders Asstd Designs. |
 | M64 | Competitive positioning | Global | What share of total revenue comes from the top 10 products? | The top 10 products generate about 8 percent of total revenue. |
-| M65 | Competitive positioning | Global | Which earns more revenue, White Hanging Heart T-Light Holder or Regency Cakestand 3 Tier? | The bigger revenue earner of the two is Regency Cakestand 3 Tier. |
+| M65 | Competitive positioning | Global | Which earns more revenue, Regency Cakestand 3 Tier or White Hanging Heart T-Light Holder? | The bigger revenue earner of the two is Regency Cakestand 3 Tier. |
 | M66 | Competitive positioning | Global | Which earns more revenue, Jumbo Bag Red Retrospot or Party Bunting? | The bigger revenue earner of the two is Party Bunting. |
 | M67 | Competitive positioning | Global | Which earns more revenue, Paper Chain Kit 50'S Christmas or Rabbit Night Light? | The bigger revenue earner of the two is Rabbit Night Light. |
-| M68 | Competitive positioning | Global | Which earns more revenue, Chilli Lights or Assorted Colour Bird Ornament? | The bigger revenue earner of the two is Assorted Colour Bird Ornament. |
-| M69 | Competitive positioning | Global | Which earns more revenue, Jumbo Bag Pink Polkadot or Spotty Bunting? | The bigger revenue earner of the two is Spotty Bunting. |
+| M68 | Competitive positioning | Global | Which earns more revenue, Assorted Colour Bird Ornament or Chilli Lights? | The bigger revenue earner of the two is Assorted Colour Bird Ornament. |
+| M69 | Competitive positioning | Global | Which earns more revenue, Spotty Bunting or Jumbo Bag Pink Polkadot? | The bigger revenue earner of the two is Spotty Bunting. |
